@@ -56,20 +56,20 @@ $valor in $text-align {
 
 // Efectos hover por consola
 .playstation-item:hover {
-    filter: drop-shadow(0px 0px 25px #008ae0);
+    filter: drop-shadow(0px 0px 15px #0055d1);
     transform: scale(1.04);
     transition: all 700ms;
 }
 
 .xbox-item:hover {
-    filter: drop-shadow(0px 0px 25px #107b10);
+    filter: drop-shadow(0px 0px 15px #189e02);
     transform: scale(1.04);
     transition: all 700ms;
     color: #107b10;
 }
 
 .switch-item:hover {
-    filter: drop-shadow(0px 0px 25px #e60012);
+    filter: drop-shadow(0px 0px 15px #f80000);
     transform: scale(1.04);
     transition: all 700ms;
     color: #e60012;
