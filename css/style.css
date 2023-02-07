@@ -113,7 +113,12 @@ a {
   transition: ease-in-out 400ms;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 1000;
 }
 
@@ -134,6 +139,15 @@ a:hover {
   transform: scale(1.1);
 }
 
+.logo {
+  font-family: "Montserrat", sans-serif;
+  color: #06f2fe;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: 2px;
+}
+
 header {
   background-color: hsla(232deg, 16%, 19%, 0.7);
   height: 65px;
@@ -149,14 +163,6 @@ header .contenedor, header .accesorios .contenedor--playstation, header .accesor
   align-items: center;
   flex-direction: row;
   gap: "";
-}
-header .contenedor #logo, header .accesorios .contenedor--playstation #logo, header .accesorios--playstation .contenedor--playstation #logo, header .accesorios--switch .contenedor--playstation #logo, header .accesorios--xbox .contenedor--playstation #logo, .accesorios header .contenedor--playstation #logo, .accesorios--playstation header .contenedor--playstation #logo, .accesorios--switch header .contenedor--playstation #logo, .accesorios--xbox header .contenedor--playstation #logo, header .cover-consola .contenedor--switch #logo, .cover-consola header .contenedor--switch #logo, header .cover-consola--xbox .contenedor--switch #logo, .cover-consola--xbox header .contenedor--switch #logo, header .cover-consola--playstation .contenedor--switch #logo, .cover-consola--playstation header .contenedor--switch #logo, header .cover-consola--switch .contenedor--switch #logo, .cover-consola--switch header .contenedor--switch #logo, header .cover-consola .contenedor--xbox #logo, .cover-consola header .contenedor--xbox #logo, header .cover-consola--xbox .contenedor--xbox #logo, .cover-consola--xbox header .contenedor--xbox #logo, header .cover-consola--playstation .contenedor--xbox #logo, .cover-consola--playstation header .contenedor--xbox #logo, header .cover-consola--switch .contenedor--xbox #logo, .cover-consola--switch header .contenedor--xbox #logo, header .cover-consola .contenedor--playstation #logo, .cover-consola header .contenedor--playstation #logo, header .cover-consola--xbox .contenedor--playstation #logo, .cover-consola--xbox header .contenedor--playstation #logo, header .cover-consola--playstation .contenedor--playstation #logo, .cover-consola--playstation header .contenedor--playstation #logo, header .cover-consola--switch .contenedor--playstation #logo, .cover-consola--switch header .contenedor--playstation #logo {
-  font-family: "Montserrat", sans-serif;
-  color: #06f2fe;
-  font-size: 28px;
-  font-weight: 500;
-  text-align: left;
-  letter-spacing: 2px;
 }
 header .contenedor #icon_menu, header .accesorios .contenedor--playstation #icon_menu, header .accesorios--playstation .contenedor--playstation #icon_menu, header .accesorios--switch .contenedor--playstation #icon_menu, header .accesorios--xbox .contenedor--playstation #icon_menu, .accesorios header .contenedor--playstation #icon_menu, .accesorios--playstation header .contenedor--playstation #icon_menu, .accesorios--switch header .contenedor--playstation #icon_menu, .accesorios--xbox header .contenedor--playstation #icon_menu, header .cover-consola .contenedor--switch #icon_menu, .cover-consola header .contenedor--switch #icon_menu, header .cover-consola--xbox .contenedor--switch #icon_menu, .cover-consola--xbox header .contenedor--switch #icon_menu, header .cover-consola--playstation .contenedor--switch #icon_menu, .cover-consola--playstation header .contenedor--switch #icon_menu, header .cover-consola--switch .contenedor--switch #icon_menu, .cover-consola--switch header .contenedor--switch #icon_menu, header .cover-consola .contenedor--xbox #icon_menu, .cover-consola header .contenedor--xbox #icon_menu, header .cover-consola--xbox .contenedor--xbox #icon_menu, .cover-consola--xbox header .contenedor--xbox #icon_menu, header .cover-consola--playstation .contenedor--xbox #icon_menu, .cover-consola--playstation header .contenedor--xbox #icon_menu, header .cover-consola--switch .contenedor--xbox #icon_menu, .cover-consola--switch header .contenedor--xbox #icon_menu, header .cover-consola .contenedor--playstation #icon_menu, .cover-consola header .contenedor--playstation #icon_menu, header .cover-consola--xbox .contenedor--playstation #icon_menu, .cover-consola--xbox header .contenedor--playstation #icon_menu, header .cover-consola--playstation .contenedor--playstation #icon_menu, .cover-consola--playstation header .contenedor--playstation #icon_menu, header .cover-consola--switch .contenedor--playstation #icon_menu, .cover-consola--switch header .contenedor--playstation #icon_menu {
   display: block;
@@ -236,7 +242,8 @@ header .contenedor .menu-extend, header .accesorios .contenedor--playstation .me
   flex-direction: column;
   gap: 5px;
 }
-.forms input, .forms textarea {
+.forms input,
+.forms textarea {
   outline: none;
   padding: 5px 10px;
   border-radius: 5px;
@@ -252,7 +259,6 @@ button {
   border-radius: 5px;
   background-color: #388bfd;
   color: white;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 button:hover {
@@ -262,65 +268,69 @@ button:hover {
 
 footer {
   width: 100%;
-  padding: 20px 0px;
   background-color: #1c3049;
-  border-radius: 50px 50px 0px 0px;
+  border-radius: 40px 40px 0px 0px;
+  padding: 40px 20px 5px 20px;
 }
 footer .contenedor, footer .accesorios .contenedor--playstation, footer .accesorios--playstation .contenedor--playstation, footer .accesorios--switch .contenedor--playstation, footer .accesorios--xbox .contenedor--playstation, .accesorios footer .contenedor--playstation, .accesorios--playstation footer .contenedor--playstation, .accesorios--switch footer .contenedor--playstation, .accesorios--xbox footer .contenedor--playstation, footer .cover-consola .contenedor--switch, .cover-consola footer .contenedor--switch, footer .cover-consola--xbox .contenedor--switch, .cover-consola--xbox footer .contenedor--switch, footer .cover-consola--playstation .contenedor--switch, .cover-consola--playstation footer .contenedor--switch, footer .cover-consola--switch .contenedor--switch, .cover-consola--switch footer .contenedor--switch, footer .cover-consola .contenedor--xbox, .cover-consola footer .contenedor--xbox, footer .cover-consola--xbox .contenedor--xbox, .cover-consola--xbox footer .contenedor--xbox, footer .cover-consola--playstation .contenedor--xbox, .cover-consola--playstation footer .contenedor--xbox, footer .cover-consola--switch .contenedor--xbox, .cover-consola--switch footer .contenedor--xbox, footer .cover-consola .contenedor--playstation, .cover-consola footer .contenedor--playstation, footer .cover-consola--xbox .contenedor--playstation, .cover-consola--xbox footer .contenedor--playstation, footer .cover-consola--playstation .contenedor--playstation, .cover-consola--playstation footer .contenedor--playstation, footer .cover-consola--switch .contenedor--playstation, .cover-consola--switch footer .contenedor--playstation {
-  display: flex;
-  justify-content: space-between;
-  align-items: "";
-  flex-direction: row;
-  gap: 0px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: flex-start;
+  justify-items: center;
 }
-
-.box__footer {
+footer .contenedor :first-child, footer .accesorios .contenedor--playstation :first-child, footer .accesorios--playstation .contenedor--playstation :first-child, footer .accesorios--switch .contenedor--playstation :first-child, footer .accesorios--xbox .contenedor--playstation :first-child, .accesorios footer .contenedor--playstation :first-child, .accesorios--playstation footer .contenedor--playstation :first-child, .accesorios--switch footer .contenedor--playstation :first-child, .accesorios--xbox footer .contenedor--playstation :first-child, footer .cover-consola .contenedor--switch :first-child, .cover-consola footer .contenedor--switch :first-child, footer .cover-consola--xbox .contenedor--switch :first-child, .cover-consola--xbox footer .contenedor--switch :first-child, footer .cover-consola--playstation .contenedor--switch :first-child, .cover-consola--playstation footer .contenedor--switch :first-child, footer .cover-consola--switch .contenedor--switch :first-child, .cover-consola--switch footer .contenedor--switch :first-child, footer .cover-consola .contenedor--xbox :first-child, .cover-consola footer .contenedor--xbox :first-child, footer .cover-consola--xbox .contenedor--xbox :first-child, .cover-consola--xbox footer .contenedor--xbox :first-child, footer .cover-consola--playstation .contenedor--xbox :first-child, .cover-consola--playstation footer .contenedor--xbox :first-child, footer .cover-consola--switch .contenedor--xbox :first-child, .cover-consola--switch footer .contenedor--xbox :first-child, footer .cover-consola .contenedor--playstation :first-child, .cover-consola footer .contenedor--playstation :first-child, footer .cover-consola--xbox .contenedor--playstation :first-child, .cover-consola--xbox footer .contenedor--playstation :first-child, footer .cover-consola--playstation .contenedor--playstation :first-child, .cover-consola--playstation footer .contenedor--playstation :first-child, footer .cover-consola--switch .contenedor--playstation :first-child, .cover-consola--switch footer .contenedor--playstation :first-child {
+  grid-column: 1/3;
+}
+@media (min-width: 576px) {
+  footer .contenedor :first-child, footer .accesorios .contenedor--playstation :first-child, footer .accesorios--playstation .contenedor--playstation :first-child, footer .accesorios--switch .contenedor--playstation :first-child, footer .accesorios--xbox .contenedor--playstation :first-child, .accesorios footer .contenedor--playstation :first-child, .accesorios--playstation footer .contenedor--playstation :first-child, .accesorios--switch footer .contenedor--playstation :first-child, .accesorios--xbox footer .contenedor--playstation :first-child, footer .cover-consola .contenedor--switch :first-child, .cover-consola footer .contenedor--switch :first-child, footer .cover-consola--xbox .contenedor--switch :first-child, .cover-consola--xbox footer .contenedor--switch :first-child, footer .cover-consola--playstation .contenedor--switch :first-child, .cover-consola--playstation footer .contenedor--switch :first-child, footer .cover-consola--switch .contenedor--switch :first-child, .cover-consola--switch footer .contenedor--switch :first-child, footer .cover-consola .contenedor--xbox :first-child, .cover-consola footer .contenedor--xbox :first-child, footer .cover-consola--xbox .contenedor--xbox :first-child, .cover-consola--xbox footer .contenedor--xbox :first-child, footer .cover-consola--playstation .contenedor--xbox :first-child, .cover-consola--playstation footer .contenedor--xbox :first-child, footer .cover-consola--switch .contenedor--xbox :first-child, .cover-consola--switch footer .contenedor--xbox :first-child, footer .cover-consola .contenedor--playstation :first-child, .cover-consola footer .contenedor--playstation :first-child, footer .cover-consola--xbox .contenedor--playstation :first-child, .cover-consola--xbox footer .contenedor--playstation :first-child, footer .cover-consola--playstation .contenedor--playstation :first-child, .cover-consola--playstation footer .contenedor--playstation :first-child, footer .cover-consola--switch .contenedor--playstation :first-child, .cover-consola--switch footer .contenedor--playstation :first-child {
+    grid-column: auto;
+  }
+}
+footer .contenedor :last-child, footer .accesorios .contenedor--playstation :last-child, footer .accesorios--playstation .contenedor--playstation :last-child, footer .accesorios--switch .contenedor--playstation :last-child, footer .accesorios--xbox .contenedor--playstation :last-child, .accesorios footer .contenedor--playstation :last-child, .accesorios--playstation footer .contenedor--playstation :last-child, .accesorios--switch footer .contenedor--playstation :last-child, .accesorios--xbox footer .contenedor--playstation :last-child, footer .cover-consola .contenedor--switch :last-child, .cover-consola footer .contenedor--switch :last-child, footer .cover-consola--xbox .contenedor--switch :last-child, .cover-consola--xbox footer .contenedor--switch :last-child, footer .cover-consola--playstation .contenedor--switch :last-child, .cover-consola--playstation footer .contenedor--switch :last-child, footer .cover-consola--switch .contenedor--switch :last-child, .cover-consola--switch footer .contenedor--switch :last-child, footer .cover-consola .contenedor--xbox :last-child, .cover-consola footer .contenedor--xbox :last-child, footer .cover-consola--xbox .contenedor--xbox :last-child, .cover-consola--xbox footer .contenedor--xbox :last-child, footer .cover-consola--playstation .contenedor--xbox :last-child, .cover-consola--playstation footer .contenedor--xbox :last-child, footer .cover-consola--switch .contenedor--xbox :last-child, .cover-consola--switch footer .contenedor--xbox :last-child, footer .cover-consola .contenedor--playstation :last-child, .cover-consola footer .contenedor--playstation :last-child, footer .cover-consola--xbox .contenedor--playstation :last-child, .cover-consola--xbox footer .contenedor--playstation :last-child, footer .cover-consola--playstation .contenedor--playstation :last-child, .cover-consola--playstation footer .contenedor--playstation :last-child, footer .cover-consola--switch .contenedor--playstation :last-child, .cover-consola--switch footer .contenedor--playstation :last-child {
+  grid-column: 1/3;
+}
+@media (min-width: 576px) {
+  footer .contenedor :last-child, footer .accesorios .contenedor--playstation :last-child, footer .accesorios--playstation .contenedor--playstation :last-child, footer .accesorios--switch .contenedor--playstation :last-child, footer .accesorios--xbox .contenedor--playstation :last-child, .accesorios footer .contenedor--playstation :last-child, .accesorios--playstation footer .contenedor--playstation :last-child, .accesorios--switch footer .contenedor--playstation :last-child, .accesorios--xbox footer .contenedor--playstation :last-child, footer .cover-consola .contenedor--switch :last-child, .cover-consola footer .contenedor--switch :last-child, footer .cover-consola--xbox .contenedor--switch :last-child, .cover-consola--xbox footer .contenedor--switch :last-child, footer .cover-consola--playstation .contenedor--switch :last-child, .cover-consola--playstation footer .contenedor--switch :last-child, footer .cover-consola--switch .contenedor--switch :last-child, .cover-consola--switch footer .contenedor--switch :last-child, footer .cover-consola .contenedor--xbox :last-child, .cover-consola footer .contenedor--xbox :last-child, footer .cover-consola--xbox .contenedor--xbox :last-child, .cover-consola--xbox footer .contenedor--xbox :last-child, footer .cover-consola--playstation .contenedor--xbox :last-child, .cover-consola--playstation footer .contenedor--xbox :last-child, footer .cover-consola--switch .contenedor--xbox :last-child, .cover-consola--switch footer .contenedor--xbox :last-child, footer .cover-consola .contenedor--playstation :last-child, .cover-consola footer .contenedor--playstation :last-child, footer .cover-consola--xbox .contenedor--playstation :last-child, .cover-consola--xbox footer .contenedor--playstation :last-child, footer .cover-consola--playstation .contenedor--playstation :last-child, .cover-consola--playstation footer .contenedor--playstation :last-child, footer .cover-consola--switch .contenedor--playstation :last-child, .cover-consola--switch footer .contenedor--playstation :last-child {
+    grid-column: 1/4;
+  }
+}
+@media (min-width: 768px) {
+  footer .contenedor :last-child, footer .accesorios .contenedor--playstation :last-child, footer .accesorios--playstation .contenedor--playstation :last-child, footer .accesorios--switch .contenedor--playstation :last-child, footer .accesorios--xbox .contenedor--playstation :last-child, .accesorios footer .contenedor--playstation :last-child, .accesorios--playstation footer .contenedor--playstation :last-child, .accesorios--switch footer .contenedor--playstation :last-child, .accesorios--xbox footer .contenedor--playstation :last-child, footer .cover-consola .contenedor--switch :last-child, .cover-consola footer .contenedor--switch :last-child, footer .cover-consola--xbox .contenedor--switch :last-child, .cover-consola--xbox footer .contenedor--switch :last-child, footer .cover-consola--playstation .contenedor--switch :last-child, .cover-consola--playstation footer .contenedor--switch :last-child, footer .cover-consola--switch .contenedor--switch :last-child, .cover-consola--switch footer .contenedor--switch :last-child, footer .cover-consola .contenedor--xbox :last-child, .cover-consola footer .contenedor--xbox :last-child, footer .cover-consola--xbox .contenedor--xbox :last-child, .cover-consola--xbox footer .contenedor--xbox :last-child, footer .cover-consola--playstation .contenedor--xbox :last-child, .cover-consola--playstation footer .contenedor--xbox :last-child, footer .cover-consola--switch .contenedor--xbox :last-child, .cover-consola--switch footer .contenedor--xbox :last-child, footer .cover-consola .contenedor--playstation :last-child, .cover-consola footer .contenedor--playstation :last-child, footer .cover-consola--xbox .contenedor--playstation :last-child, .cover-consola--xbox footer .contenedor--playstation :last-child, footer .cover-consola--playstation .contenedor--playstation :last-child, .cover-consola--playstation footer .contenedor--playstation :last-child, footer .cover-consola--switch .contenedor--playstation :last-child, .cover-consola--switch footer .contenedor--playstation :last-child {
+    grid-column: auto;
+  }
+}
+footer .contenedor .seccion-footer, footer .accesorios .contenedor--playstation .seccion-footer, footer .accesorios--playstation .contenedor--playstation .seccion-footer, footer .accesorios--switch .contenedor--playstation .seccion-footer, footer .accesorios--xbox .contenedor--playstation .seccion-footer, .accesorios footer .contenedor--playstation .seccion-footer, .accesorios--playstation footer .contenedor--playstation .seccion-footer, .accesorios--switch footer .contenedor--playstation .seccion-footer, .accesorios--xbox footer .contenedor--playstation .seccion-footer, footer .cover-consola .contenedor--switch .seccion-footer, .cover-consola footer .contenedor--switch .seccion-footer, footer .cover-consola--xbox .contenedor--switch .seccion-footer, .cover-consola--xbox footer .contenedor--switch .seccion-footer, footer .cover-consola--playstation .contenedor--switch .seccion-footer, .cover-consola--playstation footer .contenedor--switch .seccion-footer, footer .cover-consola--switch .contenedor--switch .seccion-footer, .cover-consola--switch footer .contenedor--switch .seccion-footer, footer .cover-consola .contenedor--xbox .seccion-footer, .cover-consola footer .contenedor--xbox .seccion-footer, footer .cover-consola--xbox .contenedor--xbox .seccion-footer, .cover-consola--xbox footer .contenedor--xbox .seccion-footer, footer .cover-consola--playstation .contenedor--xbox .seccion-footer, .cover-consola--playstation footer .contenedor--xbox .seccion-footer, footer .cover-consola--switch .contenedor--xbox .seccion-footer, .cover-consola--switch footer .contenedor--xbox .seccion-footer, footer .cover-consola .contenedor--playstation .seccion-footer, .cover-consola footer .contenedor--playstation .seccion-footer, footer .cover-consola--xbox .contenedor--playstation .seccion-footer, .cover-consola--xbox footer .contenedor--playstation .seccion-footer, footer .cover-consola--playstation .contenedor--playstation .seccion-footer, .cover-consola--playstation footer .contenedor--playstation .seccion-footer, footer .cover-consola--switch .contenedor--playstation .seccion-footer, .cover-consola--switch footer .contenedor--playstation .seccion-footer {
+  color: white;
   display: flex;
+  justify-content: "";
+  align-items: flex-start;
   flex-direction: column;
-  gap: 10px;
-  padding: 40px;
+  gap: 5px;
 }
-
-.box__footer .logo a {
-  font-weight: 600;
-  font-size: 26px;
+footer .contenedor .seccion-footer .redes, footer .accesorios .contenedor--playstation .seccion-footer .redes, footer .accesorios--playstation .contenedor--playstation .seccion-footer .redes, footer .accesorios--switch .contenedor--playstation .seccion-footer .redes, footer .accesorios--xbox .contenedor--playstation .seccion-footer .redes, .accesorios footer .contenedor--playstation .seccion-footer .redes, .accesorios--playstation footer .contenedor--playstation .seccion-footer .redes, .accesorios--switch footer .contenedor--playstation .seccion-footer .redes, .accesorios--xbox footer .contenedor--playstation .seccion-footer .redes, footer .cover-consola .contenedor--switch .seccion-footer .redes, .cover-consola footer .contenedor--switch .seccion-footer .redes, footer .cover-consola--xbox .contenedor--switch .seccion-footer .redes, .cover-consola--xbox footer .contenedor--switch .seccion-footer .redes, footer .cover-consola--playstation .contenedor--switch .seccion-footer .redes, .cover-consola--playstation footer .contenedor--switch .seccion-footer .redes, footer .cover-consola--switch .contenedor--switch .seccion-footer .redes, .cover-consola--switch footer .contenedor--switch .seccion-footer .redes, footer .cover-consola .contenedor--xbox .seccion-footer .redes, .cover-consola footer .contenedor--xbox .seccion-footer .redes, footer .cover-consola--xbox .contenedor--xbox .seccion-footer .redes, .cover-consola--xbox footer .contenedor--xbox .seccion-footer .redes, footer .cover-consola--playstation .contenedor--xbox .seccion-footer .redes, .cover-consola--playstation footer .contenedor--xbox .seccion-footer .redes, footer .cover-consola--switch .contenedor--xbox .seccion-footer .redes, .cover-consola--switch footer .contenedor--xbox .seccion-footer .redes, footer .cover-consola .contenedor--playstation .seccion-footer .redes, .cover-consola footer .contenedor--playstation .seccion-footer .redes, footer .cover-consola--xbox .contenedor--playstation .seccion-footer .redes, .cover-consola--xbox footer .contenedor--playstation .seccion-footer .redes, footer .cover-consola--playstation .contenedor--playstation .seccion-footer .redes, .cover-consola--playstation footer .contenedor--playstation .seccion-footer .redes, footer .cover-consola--switch .contenedor--playstation .seccion-footer .redes, .cover-consola--switch footer .contenedor--playstation .seccion-footer .redes {
+  padding: 5px 0px;
+  font-size: 28px;
+  display: flex;
+  justify-content: "";
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
 }
-
-.box__footer .terms {
-  max-width: 350px;
-  margin-top: 5px;
-  color: #f1f1f1;
+@media (min-width: 576px) {
+  footer .contenedor, footer .accesorios .contenedor--playstation, footer .accesorios--playstation .contenedor--playstation, footer .accesorios--switch .contenedor--playstation, footer .accesorios--xbox .contenedor--playstation, .accesorios footer .contenedor--playstation, .accesorios--playstation footer .contenedor--playstation, .accesorios--switch footer .contenedor--playstation, .accesorios--xbox footer .contenedor--playstation, footer .cover-consola .contenedor--switch, .cover-consola footer .contenedor--switch, footer .cover-consola--xbox .contenedor--switch, .cover-consola--xbox footer .contenedor--switch, footer .cover-consola--playstation .contenedor--switch, .cover-consola--playstation footer .contenedor--switch, footer .cover-consola--switch .contenedor--switch, .cover-consola--switch footer .contenedor--switch, footer .cover-consola .contenedor--xbox, .cover-consola footer .contenedor--xbox, footer .cover-consola--xbox .contenedor--xbox, .cover-consola--xbox footer .contenedor--xbox, footer .cover-consola--playstation .contenedor--xbox, .cover-consola--playstation footer .contenedor--xbox, footer .cover-consola--switch .contenedor--xbox, .cover-consola--switch footer .contenedor--xbox, footer .cover-consola .contenedor--playstation, .cover-consola footer .contenedor--playstation, footer .cover-consola--xbox .contenedor--playstation, .cover-consola--xbox footer .contenedor--playstation, footer .cover-consola--playstation .contenedor--playstation, .cover-consola--playstation footer .contenedor--playstation, footer .cover-consola--switch .contenedor--playstation, .cover-consola--switch footer .contenedor--playstation {
+    grid-template-columns: 250px repeat(2, 110px);
+    justify-content: space-evenly;
+  }
 }
-
-.box__footer h4 {
+@media (min-width: 768px) {
+  footer .contenedor, footer .accesorios .contenedor--playstation, footer .accesorios--playstation .contenedor--playstation, footer .accesorios--switch .contenedor--playstation, footer .accesorios--xbox .contenedor--playstation, .accesorios footer .contenedor--playstation, .accesorios--playstation footer .contenedor--playstation, .accesorios--switch footer .contenedor--playstation, .accesorios--xbox footer .contenedor--playstation, footer .cover-consola .contenedor--switch, .cover-consola footer .contenedor--switch, footer .cover-consola--xbox .contenedor--switch, .cover-consola--xbox footer .contenedor--switch, footer .cover-consola--playstation .contenedor--switch, .cover-consola--playstation footer .contenedor--switch, footer .cover-consola--switch .contenedor--switch, .cover-consola--switch footer .contenedor--switch, footer .cover-consola .contenedor--xbox, .cover-consola footer .contenedor--xbox, footer .cover-consola--xbox .contenedor--xbox, .cover-consola--xbox footer .contenedor--xbox, footer .cover-consola--playstation .contenedor--xbox, .cover-consola--playstation footer .contenedor--xbox, footer .cover-consola--switch .contenedor--xbox, .cover-consola--switch footer .contenedor--xbox, footer .cover-consola .contenedor--playstation, .cover-consola footer .contenedor--playstation, footer .cover-consola--xbox .contenedor--playstation, .cover-consola--xbox footer .contenedor--playstation, footer .cover-consola--playstation .contenedor--playstation, .cover-consola--playstation footer .contenedor--playstation, footer .cover-consola--switch .contenedor--playstation, .cover-consola--switch footer .contenedor--playstation {
+    grid-template-columns: 290px repeat(3, 110px);
+  }
+}
+footer .derechos {
   color: white;
-}
-
-.box__footer a {
-  color: white;
-}
-
-.box__footer a:hover {
-  opacity: 0.8;
-}
-
-.box__copyright {
-  max-width: 1200px;
-  margin: auto;
   text-align: center;
-  padding: 0px 40px;
-}
-
-.box__copyright p {
-  margin-top: 20px;
-  color: white;
-}
-
-.box__copyright hr {
-  border: none;
-  height: 1px;
-  background-color: white;
 }
 
 .carrusel {
@@ -483,7 +493,7 @@ footer .contenedor, footer .accesorios .contenedor--playstation, footer .accesor
 .nosotros .contenedor, .nosotros .accesorios .contenedor--playstation, .nosotros .accesorios--playstation .contenedor--playstation, .nosotros .accesorios--switch .contenedor--playstation, .nosotros .accesorios--xbox .contenedor--playstation, .accesorios .nosotros .contenedor--playstation, .accesorios--playstation .nosotros .contenedor--playstation, .accesorios--switch .nosotros .contenedor--playstation, .accesorios--xbox .nosotros .contenedor--playstation, .nosotros .cover-consola .contenedor--switch, .cover-consola .nosotros .contenedor--switch, .nosotros .cover-consola--xbox .contenedor--switch, .cover-consola--xbox .nosotros .contenedor--switch, .nosotros .cover-consola--playstation .contenedor--switch, .cover-consola--playstation .nosotros .contenedor--switch, .nosotros .cover-consola--switch .contenedor--switch, .cover-consola--switch .nosotros .contenedor--switch, .nosotros .cover-consola .contenedor--xbox, .cover-consola .nosotros .contenedor--xbox, .nosotros .cover-consola--xbox .contenedor--xbox, .cover-consola--xbox .nosotros .contenedor--xbox, .nosotros .cover-consola--playstation .contenedor--xbox, .cover-consola--playstation .nosotros .contenedor--xbox, .nosotros .cover-consola--switch .contenedor--xbox, .cover-consola--switch .nosotros .contenedor--xbox, .nosotros .cover-consola .contenedor--playstation, .cover-consola .nosotros .contenedor--playstation, .nosotros .cover-consola--xbox .contenedor--playstation, .cover-consola--xbox .nosotros .contenedor--playstation, .nosotros .cover-consola--playstation .contenedor--playstation, .cover-consola--playstation .nosotros .contenedor--playstation, .nosotros .cover-consola--switch .contenedor--playstation, .cover-consola--switch .nosotros .contenedor--playstation {
   display: flex;
   justify-content: center;
-  align-items: "";
+  align-items: center;
   flex-direction: column;
   gap: 1px;
 }
@@ -611,7 +621,23 @@ footer .contenedor, footer .accesorios .contenedor--playstation, footer .accesor
     width: 50%;
   }
 }
-.cover-consola .contenedor .texto h4, .cover-consola .contenedor--switch .texto h4, .cover-consola .contenedor--xbox .texto h4, .cover-consola .contenedor--playstation .texto h4, .cover-consola--xbox .contenedor .texto h4, .cover-consola--xbox .contenedor--switch .texto h4, .cover-consola--xbox .contenedor--xbox .texto h4, .cover-consola--xbox .contenedor--playstation .texto h4, .cover-consola--playstation .contenedor .texto h4, .cover-consola--playstation .contenedor--switch .texto h4, .cover-consola--playstation .contenedor--xbox .texto h4, .cover-consola--playstation .contenedor--playstation .texto h4, .cover-consola--switch .contenedor .texto h4, .cover-consola--switch .contenedor--switch .texto h4, .cover-consola--switch .contenedor--xbox .texto h4, .cover-consola--switch .contenedor--playstation .texto h4, .cover-consola .contenedor .texto h3, .cover-consola .contenedor--switch .texto h3, .cover-consola .contenedor--xbox .texto h3, .cover-consola .contenedor--playstation .texto h3, .cover-consola--xbox .contenedor .texto h3, .cover-consola--xbox .contenedor--switch .texto h3, .cover-consola--xbox .contenedor--xbox .texto h3, .cover-consola--xbox .contenedor--playstation .texto h3, .cover-consola--playstation .contenedor .texto h3, .cover-consola--playstation .contenedor--switch .texto h3, .cover-consola--playstation .contenedor--xbox .texto h3, .cover-consola--playstation .contenedor--playstation .texto h3, .cover-consola--switch .contenedor .texto h3, .cover-consola--switch .contenedor--switch .texto h3, .cover-consola--switch .contenedor--xbox .texto h3, .cover-consola--switch .contenedor--playstation .texto h3 {
+.cover-consola .contenedor .texto h4, .cover-consola .contenedor--switch .texto h4, .cover-consola .contenedor--xbox .texto h4, .cover-consola .contenedor--playstation .texto h4, .cover-consola--xbox .contenedor .texto h4, .cover-consola--xbox .contenedor--switch .texto h4, .cover-consola--xbox .contenedor--xbox .texto h4, .cover-consola--xbox .contenedor--playstation .texto h4, .cover-consola--playstation .contenedor .texto h4, .cover-consola--playstation .contenedor--switch .texto h4, .cover-consola--playstation .contenedor--xbox .texto h4, .cover-consola--playstation .contenedor--playstation .texto h4, .cover-consola--switch .contenedor .texto h4, .cover-consola--switch .contenedor--switch .texto h4, .cover-consola--switch .contenedor--xbox .texto h4, .cover-consola--switch .contenedor--playstation .texto h4,
+.cover-consola .contenedor .texto h3,
+.cover-consola .contenedor--switch .texto h3,
+.cover-consola .contenedor--xbox .texto h3,
+.cover-consola .contenedor--playstation .texto h3,
+.cover-consola--xbox .contenedor .texto h3,
+.cover-consola--xbox .contenedor--switch .texto h3,
+.cover-consola--xbox .contenedor--xbox .texto h3,
+.cover-consola--xbox .contenedor--playstation .texto h3,
+.cover-consola--playstation .contenedor .texto h3,
+.cover-consola--playstation .contenedor--switch .texto h3,
+.cover-consola--playstation .contenedor--xbox .texto h3,
+.cover-consola--playstation .contenedor--playstation .texto h3,
+.cover-consola--switch .contenedor .texto h3,
+.cover-consola--switch .contenedor--switch .texto h3,
+.cover-consola--switch .contenedor--xbox .texto h3,
+.cover-consola--switch .contenedor--playstation .texto h3 {
   color: white;
   font-weight: 400;
 }
@@ -762,7 +788,8 @@ footer .contenedor, footer .accesorios .contenedor--playstation, footer .accesor
   flex-direction: column;
   gap: "";
 }
-.cover-accesorios h2, .cover-accesorios p {
+.cover-accesorios h2,
+.cover-accesorios p {
   color: white;
   font-size: "";
   font-weight: 400;

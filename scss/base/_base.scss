@@ -3,16 +3,16 @@
 }
 
 ::-webkit-scrollbar-track {
-background: #f1f1f1;
+    background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-border-radius: 5px;
-background: $fondo;
+    border-radius: 5px;
+    background: $fondo;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-background: #555;
+    background: #555;
 }
 
 @font-face {
@@ -20,7 +20,7 @@ background: #555;
     src: url("./font/MuseoSansRounded100.otf"), url("./font/MuseoSansRounded300.otf"), url("./font/MuseoSansRounded500.otf"), url("./font/MuseoSansRounded700.otf"), url("./font/MuseoSansRounded900.otf"), url("./font/MuseoSansRounded1000.otf");
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -28,29 +28,45 @@ background: #555;
     list-style: none;
 }
 
-textarea{
+textarea {
     resize: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
     transition: ease-in-out 400ms;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 1000;
 }
-p{
+
+p {
     font-size: 18px;
 }
-body{
+
+body {
     background-color: $fondo;
 }
-button{
+
+button {
     cursor: pointer;
 }
 
-a:hover{
+a:hover {
     color: $colorSecundario;
     transform: scale(1.1);
+}
+
+// Logo
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    @include font($colorPrimario, 28px, 500, left);
+    letter-spacing: 2px;
 }

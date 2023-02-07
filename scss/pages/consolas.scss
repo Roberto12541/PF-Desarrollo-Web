@@ -1,53 +1,67 @@
-.cover-consola{
+.cover-consola {
     height: 40vh;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    &--xbox{
+
+    &--xbox {
         @extend .cover-consola;
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fondos/cover-xbox.png");
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fondos/cover-xbox.png");
     }
-    &--playstation{
+
+    &--playstation {
         @extend .cover-consola;
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fondos/cover-playstation.webp");
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fondos/cover-playstation.webp");
     }
-    &--switch{
+
+    &--switch {
         @extend .cover-consola;
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/fondos/cover-switch.jpg");
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/fondos/cover-switch.jpg");
     }
-    .contenedor{
+
+    .contenedor {
         @include flex(flex-start, center, row, 0px);
-        .texto{
+
+        .texto {
             width: 60%;
-            padding:  0px 0px 0px 20px;
-            @include query(md){
-                width: 50%; 
+            padding: 0px 0px 0px 20px;
+
+            @include query(md) {
+                width: 50%;
             }
-            h4,h3{
+
+            h4,
+            h3 {
                 color: white;
                 font-weight: 400;
             }
         }
-        &--playstation{
+
+        &--playstation {
             @extend .contenedor;
         }
-        &--xbox{
+
+        &--xbox {
             @extend .contenedor;
             justify-content: flex-end;
-            padding:  0px 20px 0px 0px;
-            .texto{
+            padding: 0px 20px 0px 0px;
+
+            .texto {
                 text-align: right;
                 width: 50%;
             }
         }
-        &--switch{
+
+        &--switch {
             @extend .contenedor;
             justify-content: flex-end;
-            padding:  0px 30px 0px 0px;
-            .texto{
+            padding: 0px 30px 0px 0px;
+
+            .texto {
                 width: 50%;
                 text-align: right;
-                h2{
+
+                h2 {
                     font-size: 32px;
                     color: #feca07;
                     font-weight: 400;
@@ -55,51 +69,61 @@
             }
         }
     }
-    @include query(sm){
+
+    @include query(sm) {
         height: 50vh;
     }
-    @include query(md){
+
+    @include query(md) {
         height: 80vh;
     }
 }
 
-.consolas{
-    .contenedor{
+.consolas {
+    .contenedor {
         @include grid(repeat(2, 1fr), 5px, flex-start, flex-start);
-        @include query(sm){
+
+        @include query(sm) {
             grid-template-columns: repeat(3, 1fr);
         }
-        @include query(md){
+
+        @include query(md) {
             grid-template-columns: repeat(4, 1fr);
         }
-        @include query(lg){
+
+        @include query(lg) {
             grid-template-columns: repeat(5, 1fr);
         }
-        @include query(xl){
+
+        @include query(xl) {
             grid-template-columns: repeat(6, 1fr);
         }
-        .consola{
+
+        .consola {
             max-width: 230px;
             overflow: hidden;
             border-radius: 5px;
             background-color: #141414;
             @include flex("", "", column, 5px);
-            .cuerpo{
+
+            .cuerpo {
                 padding: 10px 15px;
-                h5{
+
+                h5 {
                     font-weight: 400;
                     color: green;
                 }
-                p{
+
+                p {
                     color: white;
                     font-size: 14px;
                 }
             }
-            &:hover{
+
+            &:hover {
                 transform: scale(1.05);
                 transition: ease-out 200ms;
             }
         }
     }
 }
-
