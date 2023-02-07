@@ -284,12 +284,12 @@ footer .contenedor, footer .accesorios .contenedor--playstation, footer .accesor
 
 .box__footer .logo a {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 26px;
 }
 
 .box__footer .terms {
   max-width: 350px;
-  margin-top: 20px;
+  margin-top: 5px;
   color: #f1f1f1;
 }
 
