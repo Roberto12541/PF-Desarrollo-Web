@@ -1,12 +1,12 @@
 .contacto {
-    background-image: url(../img/contacto-background.svg);
+    background-image: url(../img/fondos/contacto-background.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 
     .contenedor {
         @include flex(space-evenly, center, column, 20px);
-        padding: 10px;
+        padding: 20px;
 
         .info__contacto {
             color: white;
@@ -23,13 +23,16 @@
 
                 .datos_contacto {
                     @include flex("", "", column, 5px);
+                    span{
+                        padding: 0px 15px
+                    }
                 }
             }
 
             .redes {
-                @include flex(space-evenly, center, row, "");
-                padding: 20px 0px;
-                font-size: 28px;
+                @include flex(flex-start, center, row, 40px);
+                padding: 15px 0px;
+                font-size: 32px;
             }
         }
 
@@ -42,6 +45,7 @@
 
             @include query(md) {
                 width: 550px;
+                height: 350px;
 
                 @include query(lg) {
                     width: 450px;
@@ -50,7 +54,8 @@
             }
         }
 
-        @include query(lg) {
+        @include query(md) {
+            align-items: flex-start;
             flex-direction: row;
         }
     }
