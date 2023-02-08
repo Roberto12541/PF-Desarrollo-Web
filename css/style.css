@@ -607,7 +607,7 @@ footer .derechos {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fondos/cover-playstation.webp");
 }
 .cover-consola--switch {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/fondos/cover-switch.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/fondos/cover-switch.jpg");
 }
 .cover-consola .contenedor, .cover-consola .contenedor--switch, .cover-consola .contenedor--xbox, .cover-consola .contenedor--playstation, .cover-consola--xbox .contenedor, .cover-consola--xbox .contenedor--switch, .cover-consola--xbox .contenedor--xbox, .cover-consola--xbox .contenedor--playstation, .cover-consola--playstation .contenedor, .cover-consola--playstation .contenedor--switch, .cover-consola--playstation .contenedor--xbox, .cover-consola--playstation .contenedor--playstation, .cover-consola--switch .contenedor, .cover-consola--switch .contenedor--switch, .cover-consola--switch .contenedor--xbox, .cover-consola--switch .contenedor--playstation {
   display: flex;
@@ -654,12 +654,10 @@ footer .derechos {
   width: 50%;
 }
 .cover-consola .contenedor--switch, .cover-consola--xbox .contenedor--switch, .cover-consola--playstation .contenedor--switch, .cover-consola--switch .contenedor--switch {
-  justify-content: flex-end;
   padding: 0px 30px 0px 0px;
 }
 .cover-consola .contenedor--switch .texto, .cover-consola--xbox .contenedor--switch .texto, .cover-consola--playstation .contenedor--switch .texto, .cover-consola--switch .contenedor--switch .texto {
   width: 50%;
-  text-align: right;
 }
 .cover-consola .contenedor--switch .texto h2, .cover-consola--xbox .contenedor--switch .texto h2, .cover-consola--playstation .contenedor--switch .texto h2, .cover-consola--switch .contenedor--switch .texto h2 {
   font-size: 32px;
@@ -818,7 +816,7 @@ footer .derechos {
 }
 
 .juegos {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/fondos/juegos-background.svg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fondos/juegos-background.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -834,7 +832,7 @@ footer .derechos {
   max-width: 220px;
   border-radius: 5px;
   overflow: hidden;
-  transition: all 300ms;
+  transition: all 600ms;
 }
 @media (min-width: 576px) {
   .juegos .contenedor, .juegos .accesorios .contenedor--playstation, .juegos .accesorios--playstation .contenedor--playstation, .juegos .accesorios--switch .contenedor--playstation, .juegos .accesorios--xbox .contenedor--playstation, .accesorios .juegos .contenedor--playstation, .accesorios--playstation .juegos .contenedor--playstation, .accesorios--switch .juegos .contenedor--playstation, .accesorios--xbox .juegos .contenedor--playstation, .juegos .cover-consola .contenedor--playstation, .cover-consola .juegos .contenedor--playstation, .juegos .cover-consola--xbox .contenedor--playstation, .cover-consola--xbox .juegos .contenedor--playstation, .juegos .cover-consola--playstation .contenedor--playstation, .cover-consola--playstation .juegos .contenedor--playstation, .juegos .cover-consola--switch .contenedor--playstation, .cover-consola--switch .juegos .contenedor--playstation, .juegos .cover-consola .contenedor--xbox, .cover-consola .juegos .contenedor--xbox, .juegos .cover-consola--xbox .contenedor--xbox, .cover-consola--xbox .juegos .contenedor--xbox, .juegos .cover-consola--playstation .contenedor--xbox, .cover-consola--playstation .juegos .contenedor--xbox, .juegos .cover-consola--switch .contenedor--xbox, .cover-consola--switch .juegos .contenedor--xbox, .juegos .cover-consola .contenedor--switch, .cover-consola .juegos .contenedor--switch, .juegos .cover-consola--xbox .contenedor--switch, .cover-consola--xbox .juegos .contenedor--switch, .juegos .cover-consola--playstation .contenedor--switch, .cover-consola--playstation .juegos .contenedor--switch, .juegos .cover-consola--switch .contenedor--switch, .cover-consola--switch .juegos .contenedor--switch {

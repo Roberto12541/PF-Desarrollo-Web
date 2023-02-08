@@ -16,7 +16,7 @@
 
     &--switch {
         @extend .cover-consola;
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../img/fondos/cover-switch.jpg");
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/fondos/cover-switch.jpg");
     }
 
     .contenedor {
@@ -54,12 +54,10 @@
 
         &--switch {
             @extend .contenedor;
-            justify-content: flex-end;
             padding: 0px 30px 0px 0px;
 
             .texto {
                 width: 50%;
-                text-align: right;
 
                 h2 {
                     font-size: 32px;
