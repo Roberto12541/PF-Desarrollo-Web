@@ -103,6 +103,10 @@ section {
   list-style: none;
 }
 
+main {
+  overflow: hidden;
+}
+
 textarea {
   resize: none;
 }
