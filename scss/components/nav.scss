@@ -1,33 +1,37 @@
 header {
-    background-color: hsla(232, 16%, 19%, 0.7);
+    background-color: $colorNav;
     height: 65px;
     position: sticky;
     top: 0;
     z-index: 100;
+    border-bottom: 2px solid $colorBorde;
+
+    a, i{
+        color: $items;
+    }
 
     .contenedor {
+        @include flex(space-between, center, row, "");
         height: 100%;
         padding: 0px 25px;
-        @include flex(space-between, center, row, "");
 
         #icon_menu {
             display: block;
             cursor: pointer;
             font-size: 24px;
-            color: $colorPrimario;
         }
 
         .menu {
             height: 0px;
             position: absolute;
             right: 10px;
-            top: 60px;
+            top: 65px;
             overflow: hidden;
             z-index: 10;
             box-shadow: 0px 0px 30px -20px rgba(0, 0, 0, 0.5);
             border-radius: 0px 0px 5px 5px;
             transition: all 300ms;
-            background-color: hsla(232, 16%, 19%, 0.7);
+            background-color: $colorNav;
 
             nav ul {
                 @include flex("", "", column, 15px);
@@ -35,22 +39,6 @@ header {
 
                 li {
                     padding: 0px 40px;
-
-                    .item-nav {
-                        font-family: 'Montserrat', sans-serif;
-                        font-size: 16px;
-                        transition: opacity 300ms;
-                        color: #e7e7e7;
-
-                        &-activo {
-                            @extend .item-nav;
-                            color: $colorPrimario;
-                        }
-
-                        &:hover {
-                            color: $colorPrimario;
-                        }
-                    }
                 }
             }
         }
@@ -58,37 +46,47 @@ header {
         .menu-extend {
             height: 230px;
         }
-    }
-}
-
-@include query(md) {
-    header .contenedor {
-        #icon_menu {
-            display: none;
-        }
-
-        .menu {
-            display: block;
-            position: relative;
-            overflow: visible;
-            top: 10px;
-            right: 0;
-            height: auto;
-            background-color: transparent;
-
-            nav ul {
-                flex-direction: row;
-                padding: 0;
-                gap: 20px;
-
-                li {
+        
+        @include query(md) {
+            #icon_menu {
+                display: none;
+            }
+    
+            .menu {
+                display: block;
+                position: relative;
+                overflow: visible;
+                top: 10px;
+                right: 0;
+                height: auto;
+                background-color: transparent;
+    
+                nav ul {
+                    flex-direction: row;
                     padding: 0;
+                    gap: 20px;
+    
+                    li {
+                        padding: 0;
+                    }
                 }
             }
         }
     }
 }
 
+.item-nav-activo {
+    color: $colorSecundario;
+    &:hover {
+        color: $items;
+    }
+}
+
+// Logo
+.logo {
+    @include font(white, 28px, 400, left);
+}
 .mayus {
-    font-size: 15px;
+    font-weight: 100;
+    font-size: 18px;
 }

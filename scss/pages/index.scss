@@ -1,5 +1,4 @@
 .carrusel {
-    height: auto;
     padding: 0;
 
     .carousel-item {
@@ -163,7 +162,8 @@
             }
 
             padding: 20px;
-            background-color: #1c3049;
+            background-color: #131231;
+            border: 2px solid $colorBorde;
             color: white;
         }
     }
@@ -203,7 +203,6 @@
 
 @include query(xl) {
     .galeria {
-        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
         justify-items: flex-start;
         align-items: flex-start;
         grid-template-columns: repeat(3, 1fr);

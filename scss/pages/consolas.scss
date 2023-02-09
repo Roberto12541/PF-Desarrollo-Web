@@ -1,103 +1,48 @@
-.cover-consola {
-    height: 40vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    &--xbox {
-        @extend .cover-consola;
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fondos/cover-xbox.png");
-    }
-
-    &--playstation {
-        @extend .cover-consola;
-        background-image: url("../img/fondos/cover-playstation.webp");
-    }
-
-    &--switch {
-        @extend .cover-consola;
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/fondos/cover-switch.jpg");
-    }
-
-    .contenedor {
-        @include flex(flex-start, center, row, 0px);
-
-        .texto {
-            width: 60%;
-            padding: 0px 0px 0px 20px;
-
-            @include query(md) {
-                width: 50%;
-            }
-
-            h4,
-            h3 {
-                color: white;
-                font-weight: 400;
-            }
-        }
-
-        &--playstation {
-            @extend .contenedor;
-        }
-
-        &--xbox {
-            @extend .contenedor;
-            justify-content: flex-end;
-            padding: 0px 20px 0px 0px;
-
-            .texto {
-                text-align: right;
-                width: 50%;
-            }
-        }
-
-        &--switch {
-            @extend .contenedor;
-            padding: 0px 30px 0px 0px;
-
-            .texto {
-                width: 50%;
-
-                h2 {
-                    font-size: 32px;
-                    color: #feca07;
-                    font-weight: 400;
-                }
-            }
-        }
-    }
-
-    @include query(sm) {
-        height: 50vh;
-    }
-
-    @include query(md) {
-        height: 80vh;
-    }
-}
-
 .consolas {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
     &--playstation {
         @extend .consolas;
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("../img/fondos/consolas-playstation.svg");
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/fondos/consolas-playstation.svg");
     }
 
     &--xbox {
         @extend .consolas;
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../img/fondos/consolas-xbox.svg");
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/fondos/consolas-xbox.svg");
     }
 
     &--switch {
         @extend .consolas;
-        background-image: url("../img/fondos/consolas-switch.svg");
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/fondos/consolas-switch.svg");
     }
 
     .contenedor {
         @include grid(repeat(2, 1fr), 5px, flex-start, flex-start);
+        .consola {
+            height: 100%;
+            max-width: 230px;
+            overflow: hidden;
+            border-radius: 5px;
+            background-color: #131231;
+            transition: linear 300ms;
+            @include flex(flex-start, "", column, 5px);
+
+            .cuerpo {
+                padding: 0px 0px 10px 10px;
+
+                p {
+                    color: gray;
+                    font-size: 14px;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.05);
+                transition: linear 250ms;
+            }
+        }
 
         @include query(sm) {
             grid-template-columns: repeat(3, 1fr);
@@ -113,34 +58,6 @@
 
         @include query(xl) {
             grid-template-columns: repeat(6, 1fr);
-        }
-
-        .consola {
-            max-width: 230px;
-            overflow: hidden;
-            border-radius: 5px;
-            background-color: #141414;
-            transition: all 300ms;
-            @include flex("", "", column, 5px);
-
-            .cuerpo {
-                padding: 10px 15px;
-
-                h5 {
-                    font-weight: 400;
-                    color: green;
-                }
-
-                p {
-                    color: white;
-                    font-size: 14px;
-                }
-            }
-
-            &:hover {
-                transform: scale(1.05);
-                transition: ease-out 200ms;
-            }
         }
     }
 }
