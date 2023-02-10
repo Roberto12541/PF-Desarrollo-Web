@@ -1,8 +1,8 @@
 .contacto {
     background-image: url(../img/fondos/contacto-background.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-size: contain;
+    background-position: top center;
 
     .contenedor {
         @include flex(space-evenly, center, column, 20px);
@@ -17,15 +17,8 @@
             .texto {
                 @include flex("", "", column, 10px);
 
-                // .contacto_titulo h3{
-                //     font-weight: 100;
-                // }
-
                 .datos_contacto {
                     @include flex("", "", column, "");
-                    span{
-                        padding: 0px 0px 0px 30px
-                    }
                 }
             }
 
